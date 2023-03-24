@@ -80,7 +80,7 @@ const login_styles = StyleSheet.create({
     },
 
     login_button: {
-        color: "#ffff", textAlign: 'center', fontSize: 15, fontWeight: 600,
+        color: "#ffff", textAlign: 'center', fontSize: 15, fontWeight: 'bold',
 
     },
 

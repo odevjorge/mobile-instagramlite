@@ -219,7 +219,7 @@ buck-out/
 .buckd/
 .buckversion
 .fakebuckversion
-android/
+/android/
 
 ### ReactNative.Android Stack ###
 # Gradle files

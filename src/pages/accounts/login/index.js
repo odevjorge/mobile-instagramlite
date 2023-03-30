@@ -1,10 +1,10 @@
 import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
 
-import instagram_logo from "../../../assets/instagram_logo.png";
-import facebook_icon from "../../../assets/facebook_icon.png";
+import instagram_logo from "../../../../assets/instagram_logo.png";
+import facebook_icon from "../../../../assets/facebook_icon.png";
 
 
-export default function Auth() {
+export default function Login() {
     return <View>
         <View style={login_styles.logo_div}>
             <Image style={login_styles.logo_image} source={instagram_logo}></Image>
@@ -35,6 +35,9 @@ export default function Auth() {
         <View style={login_styles.have_account_div}>
             <Text style={{color: '#00000030', textAlign: 'center'}}>Don’t have an account? <Text
                 style={{color: '#3797EF'}}>Sign up</Text>.</Text>
+        </View>
+        <View>
+            <Text style={{color: '#00000030', textAlign: 'center'}}>Instagram от Facebook</Text>
         </View>
     </View>
 }
@@ -101,4 +104,3 @@ const login_styles = StyleSheet.create({
 
 
 });
-  

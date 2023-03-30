@@ -1,13 +1,16 @@
-import {SafeAreaView, StyleSheet, View} from 'react-native';
-import Auth from './src/pages/accounts/auth';
+import {SafeAreaView, StatusBar, StyleSheet, View, Text} from 'react-native';
+import {NavigationContainer} from "@react-navigation/native";
+import Router from "./src/routes/router";
+import 'react-native-gesture-handler';
 
 
 export default function App() {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={{backgroundColor: '#ffff', width: '90%'}}>
-                <Auth/>
-            </View>
+                <StatusBar barStyle={'dark-content'}/>
+                <NavigationContainer>
+                    <Router/>
+                </NavigationContainer>
         </SafeAreaView>
     );
 }
@@ -19,7 +22,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    baseText: {
-        color: '#fff',
-    }
 });
